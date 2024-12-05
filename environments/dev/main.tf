@@ -32,9 +32,7 @@ module "security" {
   
   environment = var.environment
   vpc_id      = module.networking.vpc_id
-  vpn_cidr    = "172.16.0.0/16"  # Ajuste conforme sua necessidade
-  vpc_1_cidr  = "10.1.0.0/16"    # Ajuste conforme sua necessidade
-  vpc_2_cidr  = "10.2.0.0/16"    # Ajuste conforme sua necessidade
+  vpn_cidr    = "192.168.3.0/32"  # Ajuste conforme sua necessidade
   stacksync_ips = [
     "192.168.1.0/32",  # Ajuste conforme sua necessidade
     "192.168.2.0/32"   # Ajuste conforme sua necessidade
